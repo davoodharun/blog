@@ -182,10 +182,18 @@ body {
 }
 
 .section-card .icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 1rem;
-    color: #333;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1.5rem;
+    color: #ff6b35;
+    stroke-width: 1.5;
+    filter: drop-shadow(0 2px 4px rgba(255, 107, 53, 0.2));
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.section-card:hover .icon {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 8px rgba(255, 107, 53, 0.3));
 }
 
 /* List pages */
@@ -541,6 +549,15 @@ body {
     .section-card h2,
     .post-card h2 {
         color: #ffffff;
+    }
+    
+    .section-card .icon {
+        color: #ff6b35;
+        filter: drop-shadow(0 2px 4px rgba(255, 107, 53, 0.3));
+    }
+    
+    .section-card:hover .icon {
+        filter: drop-shadow(0 4px 8px rgba(255, 107, 53, 0.4));
     }
     
     .nav-link:hover,
