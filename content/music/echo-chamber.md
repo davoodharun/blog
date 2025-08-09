@@ -3,7 +3,7 @@ title: "Echo Chamber - Atmospheric Meditation"
 date: 2024-01-30
 tags: ["music", "ambient", "meditation", "atmospheric", "electronic", "downtempo"]
 description: "A meditative ambient track exploring the depths of echo and reverb, perfect for relaxation and introspection."
-soundcloud_url: "https://soundcloud.com/harun-davood/echo-chamber"
+soundcloud_url: "https://soundcloud.com/harun-davood/wantingi"
 ---
 
 # Echo Chamber - Atmospheric Meditation

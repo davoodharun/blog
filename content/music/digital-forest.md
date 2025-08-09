@@ -3,7 +3,7 @@ title: "Digital Forest - Organic Electronics"
 date: 2024-02-05
 tags: ["music", "electronic", "organic", "nature", "ambient", "experimental"]
 description: "A fusion of organic nature sounds and electronic elements, creating a digital forest soundscape."
-soundcloud_url: "https://soundcloud.com/harun-davood/digital-forest"
+soundcloud_url: "https://soundcloud.com/harun-davood/the-realest-shrimp-yo-little-simz-collage"
 ---
 
 # Digital Forest - Organic Electronics
