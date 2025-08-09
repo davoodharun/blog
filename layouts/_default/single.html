@@ -1,0 +1,57 @@
+{{ define "main" }}
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">{{ .Title }}</h1>
+        <div class="post-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">
+                {{ .Date.Format "January 2, 2006" }}
+            </time>
+            {{ if .Params.tags }}
+            <div class="post-tags">
+                {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </header>
+    
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+    
+    {{ if .Params.soundcloud_url }}
+    <div class="music-player-container">
+        <iframe 
+            class="music-player"
+            src="https://w.soundcloud.com/player/?url={{ .Params.soundcloud_url }}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            frameborder="no" 
+            scrolling="no">
+        </iframe>
+    </div>
+    {{ end }}
+    
+    {{ if .Params.instagram_gallery }}
+    <div class="instagram-gallery">
+        <div class="gallery-header">
+            <h3>Instagram Feed</h3>
+            <p>Latest visual work from my Instagram</p>
+        </div>
+        <div class="gallery-grid">
+            {{ range .Params.instagram_gallery }}
+            <div class="instagram-item">
+                <a href="{{ .link }}" target="_blank" rel="noopener" class="instagram-link">
+                    <img src="{{ .image }}" alt="{{ .caption }}" loading="lazy">
+                    <div class="instagram-overlay">
+                        <div class="instagram-caption">{{ .caption }}</div>
+                    </div>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+</article>
+{{ end }}
+
+
